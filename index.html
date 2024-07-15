@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8">
+  	<meta name="viewport" content="initial-scale=1, width=device-width">
+  	
+  	<link rel="stylesheet"  href="./index.css" />
+	<link rel="stylesheet"  href="./responsive.css" />
+	<link rel="stylesheet"  href="./global.css" />
+  	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Work Sans:wght@400;500;600;700&display=swap" />
+  	
+  	
+  	
+</head>
+<body>
+  	
+  	<div class="desktop-5">
+    		<div class="main-form-parent">
+      			<div class="main-form">
+        				<div class="tittle">
+          					<div class="h1">Welcome back!</div>
+          					<div class="h2">Please enter your username and password.</div>
+        				</div>
+        				<div class="form-input-fields">
+          					<div class="username-field">
+            						<div class="username-field-tittle">Username</div>
+									<div class="username-input-field">
+										<input type="username" class="input-field" placeholder="Enter your Username"  id="username" required></input>
+										<div class="username-icon">
+											<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<g id="vuesax/linear/user">
+												<g id="user">
+												<path id="Vector" d="M12 12C14.7614 12 17 9.76142 17 7C17 4.23858 14.7614 2 12 2C9.23858 2 7 4.23858 7 7C7 9.76142 9.23858 12 12 12Z" stroke="#DCDCDC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+												<path id="Vector_2" d="M20.59 22C20.59 18.13 16.74 15 12 15C7.26003 15 3.41003 18.13 3.41003 22" stroke="#DCDCDC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+												</g>
+												</g>
+												</svg>													
+											</div>
+								</div>
+          					</div>
+          					<div class="username-field">
+            						<div class="username-field-tittle">Password</div>
+									<div class="password-input-field" >
+										<input type="password" class="input-field" placeholder="Password" id="password" required></input>
+										<div class="password-icon">
+											<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<g id="vuesax/linear/lock">
+												<g id="lock">
+												<path id="Vector" d="M6 10V8C6 4.69 7 2 12 2C17 2 18 4.69 18 8V10" stroke="#DCDCDC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+												<path id="Vector_2" d="M12 18.5C13.3807 18.5 14.5 17.3807 14.5 16C14.5 14.6193 13.3807 13.5 12 13.5C10.6193 13.5 9.5 14.6193 9.5 16C9.5 17.3807 10.6193 18.5 12 18.5Z" stroke="#DCDCDC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+												<path id="Vector_3" d="M17 22H7C3 22 2 21 2 17V15C2 11 3 10 7 10H17C21 10 22 11 22 15V17C22 21 21 22 17 22Z" stroke="#DCDCDC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+												</g>
+												</g>
+											</svg>
+										</div>
+										<img class="eye-icon" id="eyeicon" src="eye icon.svg"></img>
+								  </div>
+          					</div>
+        				</div>
+        				<div class="checkmark">
+          					<div class="checkmark-box">
+								<input class="checkbox-input" type="checkbox" id="rememberme">
+								<label for="rememberme" class="checkmark-label">Remember me</label>
+							</div>
+          					
+        				</div>
+        				<button class="button">
+          					<div class="label">Log in</div>
+						</button>
+        				<a href="#" class="reset">Forgot your password?</a>
+      			</div>
+      			<div class="card">
+        				<img class="background-we-2" alt="" src="background we 2.svg">
+        
+        				<div class="card-text">
+          					<img class="wemanity-white-logo" alt="" src="Wemanity white logo.png">
+          					
+          					<div class="card-tittles">
+            						<div class="heading-1">Making Change Your Second Nature</div>
+            						<div class="heading-2">Wemanity is an innovation ecosystem designed to help organisations drive their transformation.</div>
+          					</div>
+        				</div>
+      			</div>
+    		</div>
+  	</div>
+  	
+  	
+  	
+	  <script>
+		let eyeicon = document.getElementById("eyeicon")
+		let password = document.getElementById("password")
+
+		eyeicon.onclick = function(){
+			if(password.type == "password"){
+				password.type = "text";
+				eyeicon.src = "show pass icon.svg"
+			}else{
+				password.type = "password";
+				eyeicon.src = "eye icon.svg"
+			}
+		}
+
+		
+	</script>
+  	
+</body>
+</html>
