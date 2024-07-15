@@ -1,10 +1,14 @@
+body, html {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+  }
+  
 ::-webkit-scrollbar {
 	width: 12px;
 }
 ::-webkit-scrollbar-track {
 	background: #292929;
-	margin-block: 8px;
-	border-radius: 20px;
 }
 ::-webkit-scrollbar-thumb {
 	background: #1b1c1c;
@@ -373,14 +377,17 @@ input[type="checkbox"]:hover {
   	font-size: 24px;
   	color: #efefef;
 }
-.main-form-parent {
+/* .main-form-parent {
   	display: flex;
   	flex-direction: row;
 	flex-wrap: wrap;
   	align-items: center;
   	justify-content: center;
-	padding: 10vh 158px 0px;
   	gap: 80px;
+	  min-height: calc(100vh - 160px);
+	  margin: 80px 0; 
+	  padding: 0 20px; 
+	box-sizing: border-box;
 }
 .desktop-5 {
   	position: fixed;
@@ -398,5 +405,35 @@ input[type="checkbox"]:hover {
   	font-size: 14px;
   	color: #fff;
   	font-family: 'Work Sans';
-}
-
+} */
+.main-form-parent {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	gap: 80px;
+	width: 100%;
+	max-width: 1920px; /* Add a max-width to limit content width on large screens */
+	margin: 0 auto; /* Center the content horizontally */
+	padding: 0 80px; /* Horizontal padding */
+	box-sizing: border-box;
+  }
+  .desktop-5 {
+	position: relative; /* Change from fixed to relative */
+	background-color: #141414;
+	width: 100%;
+	min-height: 100vh; /* Use min-height instead of height */
+	overflow-y: auto;
+	overflow-x: hidden;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center; /* Change from flex-start to center */
+	box-sizing: border-box;
+	text-align: left;
+	font-size: 14px;
+	color: #fff;
+	font-family: 'Work Sans';
+	padding: 60px 0; /* Add padding to ensure space at top and bottom */
+  }
